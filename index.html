@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="div-1">
+            <div class="div-1-1">
+                <img src="./user_g.png" alt="Datos"><br>
+                <table>
+                    <tr>
+                        <td><a href="#">Inicio</a></td>
+                        <td>|</td>
+                        <td><a href="#">Php</a></td>
+                        <td>|</td>
+                        <td><a href="#">.Net</a></td>
+                        <td>|</td>
+                        <td><a href="#">Java</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h2>Lenguajes de Programación</h2>
+            <ol>
+                <li>
+                    Paginas Web
+                    <ul>
+                        <li>Jsp</li>
+                        <li>Aspx</li>
+                        <li>Php</li>
+                    </ul>
+                </li>
+                <li>
+                    Aplicaciones
+                    <ul>
+                        <li>Java</li>
+                        <li>Visual Basic</li>
+                        <li>C#</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <table class="tabla-lenguajes">
+                <thead>
+                    <tr>
+                        <td colspan="2">Programación Web</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Asp</td>
+                        <td>Jsp</td>
+                    </tr>
+                    <tr>
+                        <td>Php</td>
+                        <td>Ruby</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Go</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="div-form">
+            <form action="" method="post">
+                <div class="div-form-group">
+                    <div>
+                        <input name="texto" type="text" placeholder="Ingrese Nombres"><br>
+                        <input name="apellido" type="text" placeholder="Ingrese Apellidos"><br>
+                        <input name="telefono" type="text" placeholder="Ingrese Número Telefónico"><br>
+                        <input name="correo" type="text" placeholder="Ingrese Correo Electrónico"><br>
+                        <input name="fecha" type="date" placeholder="dd/mm/aaaa"><br>
+                        <textarea name="mensaje" cols="2" rows="10" placeholder="Ingrese el Mensaje"></textarea>
+                    </div>
+                    <div class="div-boton">
+                        <input class="boton" type="button" name="enviar" value="Enviar" onclick="mensajeAlert();">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="div-redes">
+            <table class="tabla-redes">
+                <tr>
+                    <td colspan="2">Redes Sociales</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img src="./facebook.jpg" alt="Facebook"></a></td>
+                    <td><a href="#"><img src="./twitter.png" alt="Facebook"></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="div-final">
+            Aprende a Programar Fácil y Rápido &copy;
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function mensajeAlert(){
+          let nombre = document.getElementsByName('texto')[0].value;
+          let apellido = document.getElementsByName('apellido')[0].value;
+          let telefono = document.getElementsByName('telefono')[0].value;
+          let correo = document.getElementsByName('correo')[0].value;
+          let fecha = document.getElementsByName('fecha')[0].value;
+          let mensaje = document.getElementsByName('mensaje')[0].value;
+
+          let mensajeFinal = "Datos: " + "\n" + "     Nombres: " + nombre + "\n" + "     Apellidos: " + apellido + "\n" + "     Telefono: " + telefono + "\n" + "     Correo: " + correo + "\n" + "     Fecha: " + fecha + "\n" + "     Mensaje: " + mensaje;
+
+          alert(mensajeFinal);
+        }
+      </script>
+</body>
+
+</html>
